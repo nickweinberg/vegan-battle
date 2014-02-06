@@ -1,0 +1,25 @@
+<p>Grabs your location data and shows you vegan restaurants within 5 miles.</p>
+<div id="status-message"></div>
+<div ng-controller="VeganCtrl">
+<button class="btn btn-warning" ng-click="randomize()">Randomize</button>
+<h2>You got {{ restaurantCount }} choices...</h2>
+<div id="loader" ng-show="loading">loading</div>
+<ul>
+  <li ng-repeat="restaurant in restaurants">
+    {{restaurant.name}}
+  </li>
+</ul>
+<div id="graph-container">
+  <svg ng-attr-height="{{graph.height}}" ng-attr-width="{{graph.width}}">
+    <circle ng-repeat="circle in circles" 
+        ng-attr-cx="{{circle.x}}" 
+        ng-attr-cy="{{circle.y}}" 
+        ng-attr-r= "{{circle.r}}"
+        ng-attr-style="">
+    </circle>
+  </svg>  
+
+</div>
+</div>
+
+
