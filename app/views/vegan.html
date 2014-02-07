@@ -3,12 +3,12 @@
 <div ng-controller="VeganCtrl">
 <h1 ng-show="loading" id='loading'>Loading!</h1>
 <h3>You have {{restaurantCount}} choices!</h3>
-
-<funchart>
-	<div ng-repeat="restaurant in restaurants">
-		<placenode label="{{restaurant.name}}" distance="{{restaurant.distance}}" veglevel="{{restaurant.veg_level}}"></placenode>
-	</div>
-</funchart>
+	
+	<placenode chart-data="restaurants"></placenode>
+	<div id="canvas-spot"></div>
+	
+	<p>Left - Closest | Right - Furthest</p>
+	<p>Color coded by vegginess</p>
 
 </div>
 

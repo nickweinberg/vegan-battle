@@ -21,7 +21,7 @@ angular.module('d3FunApp')
 
     	    var sample = d3.select(el)
     	    	.append('svg')	
-    	    	.style('color', color)
+    	    	.style('color', 'yellow')
     	    	.style('background-color', '#ffff99');
 
     	    /*
