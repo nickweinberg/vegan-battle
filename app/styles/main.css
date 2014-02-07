@@ -14,6 +14,12 @@ body {
     margin-left: -40px;
 }
 
+funchart {
+  width: 700px;
+  height: 400px;
+  display: block;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
