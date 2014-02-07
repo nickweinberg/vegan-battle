@@ -1,17 +1,27 @@
-<p>Grabs your location data and shows you vegan restaurants within 5 miles.</p>
-<div id="status-message"></div>
-<div ng-controller="VeganCtrl">
-<h1 ng-show="loading" id='loading'>Loading!</h1>
-<h3>You have {{restaurantCount}} choices!</h3>
-	
-	<placenode chart-data="restaurants"></placenode>
-	<div id="canvas-spot"></div>
-	
-	<p>Left - Closest | Right - Furthest</p>
-	<p>Color coded by vegginess</p>
-
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li><a ng-href="#">Home</a></li>
+    <li class="active"><a ng-href="#">Chart</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">Vegan Battle</h3>
 </div>
 
+<div class="container">
+
+	<p>Grabs your location data and shows you vegan restaurants within 5 miles.</p>
+	<div ng-controller="VeganCtrl">
+	<h1 ng-show="loading" id='loading'>Loading!</h1>
+	<h3>You have {{restaurantCount}} choices!</h3>
+		
+		<placenode chart-data="restaurants"></placenode>
+		<div id="canvas-spot"></div>
+		
+		<p>Left - Closest | Right - Furthest</p>
+		<p>Color coded by vegginess</p>
+
+	</div>
+</div>
 
 
 
